@@ -55,11 +55,15 @@ main{
     border: double 3px black;
     border-radius: 15px;
 }
+.sectionos2{
+    text-align: center;
+}
 .parrafo2{
     padding: 20px;
     margin: 10px;
     border: double 3px black;
     border-radius: 15px;
+    text-align: center;
 }
 h2{
     padding: 15px;
@@ -113,7 +117,86 @@ h2{
     text-align: right;
 }
 @media only screen and (max-width:576px){
-    .section2{
-        
+    .container{
+        grid-template-columns: 100%;
+        grid-template-rows: (3, 1fr);
+        grid-template-areas:
+        "header"
+        "section"
+        "section2"
+        "section3"
+        "footer";
     }
+}
+@media only screen and (max-width:768px){
+    .container{
+        grid-template-columns: 100%;
+        grid-template-rows: (3, 1fr);
+        grid-template-areas:
+        "header"
+        "section"
+        "section2"
+        "section3"
+        "footer";
+    }
+}
+@media only screen and (max-width:1024px){
+    .container{
+        grid-template-columns: 100%;
+        grid-template-rows: (3, 1fr);
+        grid-template-areas:
+        "header"
+        "section"
+        "section2"
+        "section3"
+        "footer";
+    }
+}
+.container2 {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 2.6fr 0.2fr;
+    grid-auto-columns: 1fr;
+    gap: 2px 2px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header1 header1"
+      "sectionos sectionos"
+      "sectionos2 sectionos2"
+      "footer1 footer1";
+  }
+  
+  .header1 { grid-area: header1; }
+  
+  .sectionos { grid-area: sectionos; }
+  
+  .sectionos2 { grid-area: sectionos2; }
+  
+  .footer1 { grid-area: footer1; }
+
+  @media only screen and (max-width:576px){
+    .container2{
+        grid-template-columns: 100%;
+        grid-template-rows: (3, 1fr);
+        grid-template-areas:
+        "header1"
+        "sectionos"
+        "sectionos2"
+        "footer1";
+    }
+    .imgnosotros{
+        width: 350px;
+        height: 300px;
+    }
+}
+@media only screen and (max-width:768px){
+    .containe2{
+        grid-template-columns: 100%;
+        grid-template-rows: (3, 1fr);
+        grid-template-areas:
+        "header1"
+        "sectionos"
+        "sectionos2"
+        "footer1";
+    }
+   
 }

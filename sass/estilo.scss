@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #DCD7C9;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    min-height: 100vh; 
+    grid-auto-rows: auto 1fr auto;
+    width: 100%;   
+}
+.lis{
+    padding: 12px;
+    margin: 2px;
+    &:hover{
+        color: black;
+        background-color: rgb(41, 37, 37);
+        border-radius: 30%;
+    }
+}
+main{
+    text-align: center;
+}
+.parrafo1{
+    padding: 20px;
+    margin: 70px;
+    border: double 3px black;
+    border-radius: 15px;
+}
+.sectionos{
+    text-align: center;
+}
+.sectionos2{
+    text-align: center;
+    .parrafo2{
+        padding: 20px;
+        margin: 10px;
+        border: double 3px black;
+        border-radius: 15px;
+        text-align: center;
+    }
+}
+h2{
+    padding: 15px;
+    margin: 10px;
+}
+.mainprod{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    .imgprod{
+        width: 350px;
+        border: double 2px #A27B5C;
+        height: 300px;
+        margin: 20px;
+        opacity: .8;
+        &:hover{
+            opacity: 1;
+            border: solid 2px black;
+            transform: translate(15px, 20px);
+        }
+    }
+}
+.section2{
+    width: 500px;
+}
+//las variables van arriba de todo
+@import "grid";
+
+//abajo de todo mediaq
+@import "mediaq";
